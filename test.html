@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Fruit Website</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#fff8f0;
+            color:#333;
+        }
+
+        /* Navbar */
+        nav{
+            background:#ff7b00;
+            padding:20px 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav h1{
+            color:white;
+            font-size:32px;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:30px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:16px;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#ffe0b3;
+        }
+
+        /* Hero Section */
+        .hero{
+            height:90vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            background:linear-gradient(to right, #ffb347, #ff7b00);
+            color:white;
+            padding:20px;
+        }
+
+        .hero-content h2{
+            font-size:65px;
+            margin-bottom:20px;
+        }
+
+        .hero-content p{
+            font-size:24px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:14px 30px;
+            background:white;
+            color:#ff7b00;
+            text-decoration:none;
+            border-radius:30px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#ffe0b3;
+        }
+
+        /* Products Section */
+        .products{
+            padding:70px 60px;
+            text-align:center;
+        }
+
+        .products h2{
+            font-size:42px;
+            margin-bottom:50px;
+            color:#ff7b00;
+        }
+
+        .product-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+        }
+
+        .card{
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            margin:20px 0 10px;
+            font-size:28px;
+        }
+
+        .card p{
+            padding:0 20px 20px;
+            color:#666;
+        }
+
+        /* Footer */
+        footer{
+            background:#ff7b00;
+            color:white;
+            text-align:center;
+            padding:25px;
+            margin-top:50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Orange</h1>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Benefits</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <h2>Fresh & Juicy Oranges</h2>
+            <p>Natural Taste Straight From the Farm</p>
+
+            <a href="#" class="btn">Order Now</a>
+        </div>
+
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+
+        <h2>Our Orange Products</h2>
+
+        <div class="product-grid">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1547514701-42782101795e?q=80&w=1200" alt="">
+                <h3>Fresh Oranges</h3>
+                <p>Sweet and healthy oranges full of vitamins.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600271886742-f049cd5bba3f?q=80&w=1200" alt="">
+                <h3>Orange Juice</h3>
+                <p>Pure natural juice with refreshing taste.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=1200" alt="">
+                <h3>Orange Desserts</h3>
+                <p>Delicious orange-flavored sweet treats.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Orange Fruit Store</p>
+    </footer>
+
+</body>
+</html>
